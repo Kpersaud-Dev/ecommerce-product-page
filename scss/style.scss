@@ -1,0 +1,156 @@
+@import "utilities";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .header-left {
+    padding: 1em 1.5em;
+
+    .logo {
+      padding-left: 0.55em;
+    }
+
+    .navbar {
+      display: none;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+
+    img {
+      padding: 0 0.65em;
+    }
+
+    .avatar {
+      height: 26px;
+    }
+  }
+}
+
+figure {
+  width: 100vw;
+
+  .product-image {
+    width: 100vw;
+    // height: 100%;
+  }
+
+  .arrows {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .arrow {
+      background-color: white;
+      padding: 1em 1.15em;
+      border-radius: 50%;
+    }
+
+    .arrow:hover {
+      cursor: pointer;
+    }
+
+    #prev-arrow {
+      position: absolute;
+      bottom: 175px;
+      left: 20px;
+    }
+
+    #next-arrow {
+      position: absolute;
+      bottom: 175px;
+      right: 20px;
+    }
+  }
+}
+
+.description-container {
+  margin: 1em 1.25em;
+
+  .company {
+    color: $orange;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .product-title {
+    font-size: 2em;
+    margin: 0.25em 0;
+  }
+
+  .description-text {
+    color: $dark-grayish-blue;
+    line-height: 25px;
+    margin-bottom: 1.25em;
+  }
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-price {
+    display: flex;
+    align-items: center;
+
+    .discount {
+      background-color: $pale-orange;
+      color: $orange;
+      font-weight: 700;
+      padding: 0.25em 0.5em;
+      border-radius: 4px;
+      margin-left: 1em;
+    }
+  }
+
+  .previous-price {
+    color: $grayish-blue;
+    text-decoration: line-through;
+  }
+}
+
+.counter-btn {
+  width: 90%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $pale-orange;
+  padding: 2em;
+  margin: 0 1em;
+}
+
+.add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: $orange;
+  color: $white;
+  padding: 1.5em 2em;
+  margin: 1em 1em;
+
+  svg {
+    margin-right: 1em;
+  }
+}
